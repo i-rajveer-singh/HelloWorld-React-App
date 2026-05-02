@@ -1,9 +1,11 @@
 import './App.css';
 
 function App() {
+  let title = "Hello from BridgeLabz";
+  
   return (
     <div className="app-container">
-      <h1>Hello from BridgeLabz</h1>
+      <h1>{title}</h1>
     </div>
   );
 }
