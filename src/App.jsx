@@ -25,12 +25,13 @@ function App() {
   
   return (
     <div className="app-container">
-      <h1>Hello {userName} from BridgeLabz</h1>
-      <img src={logoUrl} alt="BridgeLabz Logo" onClick={onClickUrl} style={{cursor: 'pointer'}} />
-      <div style={{marginTop: '20px'}}>
-        <input type="text" placeholder="Enter your name" onChange={onNameChange} />
-        <br />
-        <span style={{color: 'red', fontSize: '12px'}}>{nameError}</span>
+      <div className="card">
+        <h1>Hello {userName} from BridgeLabz</h1>
+        <img className="logo" src={logoUrl} alt="BridgeLabz Logo" onClick={onClickUrl} />
+        <div className="input-group">
+          <input type="text" placeholder="Enter your name" onChange={onNameChange} />
+          <span className="error-text">{nameError}</span>
+        </div>
       </div>
     </div>
   );
